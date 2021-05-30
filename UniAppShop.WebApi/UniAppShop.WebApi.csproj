@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="EasyCaching.Core" Version="1.2.0" />
+    <PackageReference Include="EasyCaching.InMemory" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.15" />
+    <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="3.1.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Models\ViewModels.csproj" />
+    <ProjectReference Include="..\UniAppShop.IRepository\UniAppShop.IRepository.csproj" />
+    <ProjectReference Include="..\UniAppShop.IService\UniAppShop.IService.csproj" />
+    <ProjectReference Include="..\UniAppShop.Model\UniAppShop.Model.csproj" />
+    <ProjectReference Include="..\UniAppShop.Repository\UniAppShop.Repository.csproj" />
+    <ProjectReference Include="..\UniAppShop.Service\UniAppShop.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UploadFiles\" />
+  </ItemGroup>
+
+
+</Project>
